@@ -2,14 +2,14 @@
 <html>
 <head>
 <style>
-/* Navbar container */
+/* Navbar */
 .navbar {
   overflow: hidden;
   background-color: #595959;
   font-family: Arial;
 }
 
-/* Links inside the navbar */
+/* Text in the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -19,13 +19,13 @@
   text-decoration: none;
 }
 
-/* The dropdown container */
+/* The dropdown Menu */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Dropdown button */
+/* Dropdown buttons */
 .dropdown .dropbtn {
   font-size: 16px; 
   border: none;
@@ -37,12 +37,12 @@
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a background color to navbar links on hover */
+/* Background colour hover over the navbar content */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #2C363F;
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -63,7 +63,7 @@
   background-color: #808080;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Background colour hover over dropdown content */
 .dropdown-content a:hover {
   background-color: #24272B;
   color: white;
@@ -74,10 +74,12 @@
   display: block;
 }
 
+/* Main page background */
 body {
 background-color: #849483;
 margin: 0;
 
+/* Main title of page */
 .title {
 text-align: center;
 }
@@ -92,8 +94,8 @@ Mekanism Mod Tutorial
 <div class="navbar">
   <a href="Overview.html">Overview</a>
   <a href="Basic-Machinery.html">Basic Machinery</a>
-  <a href="Digital-Miner.html">Digital Miner</a>
   <a href="Ore-Production.html">Ore Production</a>
+  <a href="Digital-Miner.html">Digital Miner</a>
   <div class="dropdown">
     <button class="dropbtn">Tools/Equipment 
       <i class="fa fa-caret-down"></i>
@@ -108,8 +110,87 @@ Mekanism Mod Tutorial
   </div> 
 </div>
 </div>
-<p>Mekanism is a mod that implements machinery into minecraft. It revolves around its included ore "Osmium" as well as some of the base game resources
+<h3>Introduction:</h3>
+<p>Mekanism allows you to refine ore and get more than one ingot per ore. There are 5 stages to the production, each
+<br>stage allows you to gain one extra ingot from one ore. Each stage uses the machines from the previous stage and
+<br>add on another or multiple machines. This is extremely useful for the Mekanism mod as well as other mods that
+<br>require an abundance of ores. Some ores from other mods are not supported in the later stages of production due
+<br>to some of the machines not accepting modded ores however all of the base game ores are able to be processed
+<br>and stage 2 works for most modded ores.
 </p>
+
+<h3>Stage 1:</h3>
+<p>Stage 1 is the most basic stage and will only provide you with one ingot per ore. The only benefit you will gain
+<br>from using this method over a vanilla furnace is that the production is faster. This stage simply uses an energised
+<br>smelter to smelt ore into one ingot. The Energised smelter requires an energy source to power it. This is the same
+<br>for all of the machines in this process.
+
+<h3>Stage 2:</h3>
+<p>Stage 2 is a little more complicated but is still very simple, This stage will give you two ingots from one ore. This
+<br>is similar to many other mods that implement ore processing. For this stage you will need the energised smelter yet 
+<br>again as well as an enrichment chamber which will turn one ore into two dust as long as the ore you are processing is
+<br>supported by the mod. All of the ores that have a dustr form from other mods should also be compatible in this stage.
+
+<h3>Stage 3:</h3>
+<p>Stage 3 is where it really starts to implement other aspects of the mod, you will need the other two machines from
+<br>stage two as well as three new machines, the electrolytic seperator, the purification chamber and the crusher. lots
+<br>of mods have a crusher so make sure you are crafting the Mekanism one if you are using a modpack. First, you
+<br>need to pump water into the electrolytic seperator, this machine seperates the water into oxygen and hydrogen.
+<br>For this stage we need the oxygen. Pump the oxygen out of the seperator into the purification chamber, this will
+<br>turn the ore into 3 clumps, then the crusher will crush the three clumps into 3 dirty dust. The enrichment chamber
+<br>will turn the dirty dust into regular dust which can be smelted in the energised smelter. This stage is where most
+<br>ores will not be able to be processed as the clumps and dirty dust are a mekanism specific item.
+<br>
+
+<h3>Stage 4:</h3>
+
+<h4>Salination Tower:</h4>
+<p>Stage 4 will require a whole new structure, you will need a salination tower to make brine. The salination
+<br>tower works on heat. You will need to build it in a hot biome such as a volcanic island or a desert biome.
+<br>The more heat you have the faster it will produce brine. To build the tower you will create a four by four
+<br>block of thermal evaporation blocks. next you will build the middle blocks, they can be from 1 to 16 high
+<br>and must include at least 2 thermal evaporation valves on any level. The 2x2 in the center must be hollow.
+<br>The top layer consists of four advanced solar panels for power, one in each corner and a thermal evaporation
+<br>controller somewhere in the layer and the rest made up of thermal evaporation blocks. Input water into one
+<br>of the valves, this will use a large amount of water so make sure you have a good source. Brine will now be 
+<br>produced, export the brine through the other valve and you have completed this stage. 
+
+<h4>Ore Refinement:</h4>
+<p>You willneed some other machines to refine the ore as well as the other machines from the previous stages. You
+<br>will need another two electrolytic seperators one to put the brine into and one for water. You will also need a 
+<br>chemical infuser. To start this stage, pump the chlorine made in the seperator from the brine, into one side of 
+<br>the chemical infuser and pump the hydrogen made in the other seperator from the water into the other side. This
+<br>will mix the two chemicals and produce hydrogen chloride. Pump the hydrogen chloride from the chemical infuser
+<br>infuser into a chemical injection chamber. This is the start point for your ore, put your ore into the injection chamber to produce ore shards
+<br>the shards then go into the purification chamber from stage 3 and are made into four clumps then the clumps
+<br>go into the crusher to make dirty dust then into the enrichment chamber which will make dust then the dust 
+<br>is smelted. This is a very complicated stage and requires good knowledge of the mod and how it works. It is
+<br>also a very power hungry stage and will require a good power source especially with upgrades. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 -

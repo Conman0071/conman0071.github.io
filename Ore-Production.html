@@ -78,10 +78,101 @@
 body {
 background-color: #849483;
 margin: 0;
+}
+
 
 /* Main title of page */
 .title {
 text-align: center;
+}
+
+.introduction {
+position:absolute;
+left: 1%;
+right: 20%;
+}
+
+
+.stage1-text {
+position: absolute;
+left: 1%;
+top: 45%;
+}
+
+.stage2-text {
+position: absolute;
+left: 1%;
+top: 65%;
+}
+
+.stage3-text {
+position: absolute;
+left: 1%;
+top: 85%;
+}
+
+.stage4-text {
+position:absolute;
+left: 1%;
+top: 117%;
+}
+
+.row {
+position: absolute;
+right: 2%;
+top: 67%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position:absolute;
+  width: 38.5%;
+  height: 20%;
+  right: 2.5%;
+  top: 88%;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }
 </style>
 </head>
@@ -110,6 +201,8 @@ Mekanism Mod Tutorial
   </div> 
 </div>
 </div>
+
+<div class="introduction">
 <h3>Introduction:</h3>
 <p>Mekanism allows you to refine ore and get more than one ingot per ore. There are 4 stages to the production, each
 <br>stage allows you to gain one extra ingot from one ore. Each stage uses the machines from the previous stage and
@@ -118,19 +211,22 @@ Mekanism Mod Tutorial
 <br>to some of the machines not accepting modded ores however all of the base game ores are able to be processed
 <br>and stage 2 works for most modded ores.
 </p>
-
+</div>
+<div class="stage1-text">
 <h3>Stage 1:</h3>
 <p>Stage 1 is the most basic stage and will only provide you with one ingot per ore. The only benefit you will gain
 <br>from using this method over a vanilla furnace is that the production is faster. This stage simply uses an energised
 <br>smelter to smelt ore into one ingot. The Energised smelter requires an energy source to power it. This is the same
 <br>for all of the machines in this process.
-
+</div>
+<div class="stage2-text">
 <h3>Stage 2:</h3>
 <p>Stage 2 is a little more complicated but is still very simple, This stage will give you two ingots from one ore. This
 <br>is similar to many other mods that implement ore processing. For this stage you will need the energised smelter yet 
 <br>again as well as an enrichment chamber which will turn one ore into two dust as long as the ore you are processing is
 <br>supported by the mod. All of the ores that have a dustr form from other mods should also be compatible in this stage.
-
+</div>
+<div class="stage3-text">
 <h3>Stage 3:</h3>
 <p>Stage 3 is where it really starts to implement other aspects of the mod, you will need the other two machines from
 <br>stage two as well as three new machines, the electrolytic seperator, the purification chamber and the crusher. lots
@@ -141,9 +237,9 @@ Mekanism Mod Tutorial
 <br>will turn the dirty dust into regular dust which can be smelted in the energised smelter. This stage is where most
 <br>ores will not be able to be processed as the clumps and dirty dust are a mekanism specific item.
 <br>
-
+</div>
+<div class="stage4-text">
 <h3>Stage 4:</h3>
-
 <h4>Salination Tower:</h4>
 <p>Stage 4 will require a whole new structure, you will need a salination tower to make brine. The salination
 <br>tower works on heat. You will need to build it in a hot biome such as a volcanic island or a desert biome.
@@ -167,13 +263,87 @@ Mekanism Mod Tutorial
 <br>will make dust then the dustis smelted. This is a very complicated stage and requires good knowledge of the mod 
 <br>and how it works. It isalso a very power hungry stage and will require a good power source especially with upgrades. 
 </p>
+</div>
 
 
 
 
 
+<!-- Picture Box: stage 2 -->
+
+<!-- The small images -->
+<div class="row">
+  <div class="column">
+    <img src="energised-smelter.png" alt="Energised Smelter" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="enrichment-chamber.png" alt="Enrichment Chamber" onclick="myFunction(this);">
+  </div>
+</div>
+<!-- The enlarged Image -->
+<div class="container">
+  <!-- Close button for enlarged image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:40%">
+
+  <!-- the image text  -->
+  <div id="imgtext"></div>
+</div>
 
 
+
+
+<script>
+
+//Stage 2 JAVASCRIPT
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+//Stage 3 JAVASCRIPT
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg2");
+  // Get the image text
+  var imgText = document.getElementById("imgtext2");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+//Stage 4 JAVASCRIPT
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg3");
+  // Get the image text
+  var imgText = document.getElementById("imgtext3");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 
 
 
@@ -193,4 +363,3 @@ Mekanism Mod Tutorial
 
 </body>
 </html>
--

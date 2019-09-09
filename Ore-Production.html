@@ -151,7 +151,7 @@ top: 67%;
 .container {
   position:absolute;
   width: 38.5%;
-  height: 20%;
+  height: 40%;
   right: 2.5%;
   top: 88%;
 }
@@ -304,38 +304,6 @@ function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
   var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-
-
-//Stage 3 JAVASCRIPT
-
-function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg2");
-  // Get the image text
-  var imgText = document.getElementById("imgtext2");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-
-
-//Stage 4 JAVASCRIPT
-
-function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg3");
-  // Get the image text
-  var imgText = document.getElementById("imgtext3");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image

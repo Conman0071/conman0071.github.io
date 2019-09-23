@@ -14,64 +14,15 @@
   float: left;
   font-size: 16px;
   color: white;
-  text-align: center;
+  left: 100%;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* The dropdown Menu */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown buttons */
-.dropdown .dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
 
 /* Background colour hover over the navbar content */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover {
   background-color: #2C363F;
-}
-
-/* Dropdown content */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  background-color: #808080;
-}
-
-/* Background colour hover over dropdown content */
-.dropdown-content a:hover {
-  background-color: #24272B;
-  color: white;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /* Main page background */
@@ -87,77 +38,89 @@ text-align: center;
 }
 
 .introduction {
-position:absolute;
-left: 1%;
-right: 20%;
+position: absolute;
+top: 20%;
+left: 23%;
 }
 
 
 .stage1-text {
 position: absolute;
-left: 1%;
-top: 45%;
+top: 47%;
+left: 23%;
+}
+
+.stage1-img {
+position: absolute;
+left: 39%;
+top: 68%;
 }
 
 .stage2-text {
 position: absolute;
-left: 1%;
-top: 65%;
+left: 23%;
+top: 90%;
 }
 
 .stage3-text {
 position: absolute;
-left: 1%;
-top: 85%;
+top: 135%;
+left: 23%;
+}
+
+.salination-tower {
+position: absolute;
+left: 23%;
+top: 195%;
 }
 
 .stage4-text {
-position:absolute;
-left: 1%;
-top: 117%;
+position: absolute;
+left: 23%;
+top: 255%;
 }
 
-.row {
+.row1 {
 position: absolute;
-right: 2%;
-top: 67%;
+left: 30%;
+top: 112%;
 }
 
 /* The grid: Four equal columns that floats next to each other */
-.column {
+.column1 {
   float: left;
   width: 45%;
   padding: 10px;
 }
 
 /* Style the images inside the grid */
-.column img {
+.column1 img {
   opacity: 0.9; 
   cursor: pointer; 
 }
 
-.column img:hover {
+.column1 img:hover {
   opacity: 1;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row1:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+.container1 {
   position:absolute;
   width: 38%;
   height: 40%;
-  right: 3%;
-  top: 89%;
+  left: 30.75%;
+  top: 135%;
 }
 
 /* Expanding image text */
-#imgtext {
+#imgtext1 {
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -166,7 +129,182 @@ top: 67%;
 }
 
 /* Closable button inside the image */
-.closebtn {
+.closebtn1 {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.row2 {
+position: absolute;
+left: 30%;
+top: 175%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 28%;
+  padding: 9px;
+}
+
+/* Style the images inside the grid */
+.column2 img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column2 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container2 {
+  position:absolute;
+  width: 38%;
+  height: 40%;
+  left: 30.75%;
+  top: 190%;
+}
+
+/* Expanding image text */
+#imgtext2 {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn2 {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.row3 {
+position: absolute;
+left: 25%;
+top: 233%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 10%;
+  padding: 33px;
+}
+
+/* Style the images inside the grid */
+.column3 img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column3 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container3 {
+  position:absolute;
+  width: 38%;
+  height: 45%;
+  left: 30%;
+  top: 253%;
+}
+
+/* Expanding image text */
+#imgtext3 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn3 {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+.row4 {
+position: absolute;
+left: 30%;
+top: 300%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column4 {
+  float: left;
+  width: 40%;
+  padding: 15px;
+}
+
+/* Style the images inside the grid */
+.column4 img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column4 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container4 {
+  position:absolute;
+  width: 38%;
+  height: 40%;
+  left: 30.75%;
+  top: 323%;
+}
+
+/* Expanding image text */
+#imgtext4 {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn4 {
   position: absolute;
   top: 0%;
   right: 3%;
@@ -183,54 +321,41 @@ Mekanism Mod Tutorial
 <div class="title">
 <center><h1>Ore Production</h1></center>
 <div class="navbar">
-  <a href="Overview.html">Overview</a>
-  <a href="Basic-Machinery.html">Basic Machinery</a>
-  <a href="Ore-Production.html">Ore Production</a>
-  <a href="Digital-Miner.html">Digital Miner</a>
-  <div class="dropdown">
-    <button class="dropbtn">Tools/Equipment 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Aditional Base Game Tools</a>
-      <a href="#">Jetpack</a>
-      <a href="#">Atomic Deconstructor</a>
-	  <a href="#">Scuba Set</a>
-	  <a href="#"></a>
+  <a href="overview.html">Overview</a>
+  <a href="basic-machinery.html">Basic Machinery</a>
+  <a href="ore-production.html">Ore Production</a>
     </div>
   </div> 
-</div>
-</div>
 
 <div class="introduction">
 <h3>Introduction:</h3>
-<p>Mekanism allows you to refine ore and get more than one ingot per ore. There are 4 stages to the production, each
-<br>stage allows you to gain one extra ingot from one ore. Each stage uses the machines from the previous stage and
-<br>add on another or multiple machines. This is extremely useful for the Mekanism mod as well as other mods that
-<br>require an abundance of ores. Some ores from other mods are not supported in the later stages of production due
-<br>to some of the machines not accepting modded ores however all of the base game ores are able to be processed
-<br>and stage 2 works for most modded ores.
+<p>Mekanism allows you to refine ore to get more than one ingot per ore. There are 4 stages to the production, each
+<br>stage allows you to gain one extra ingot from the ore. Each stage uses the machines from the previous stage and
+<br>adds on another or multiple machines. This is extremely useful for the Mekanism mod as well as other mods that
+<br>require an abundance of metals. Some ores from other mods are not supported in the later stages of production due
+<br>to some of the machines not accepting modded ores, however all of the base game ores are able to be processed
+<br>and stage 2 works for most modded ores. All of the machines in this process will require a good power source.
 </p>
 </div>
 <div class="stage1-text">
 <h3>Stage 1:</h3>
 <p>Stage 1 is the most basic stage and will only provide you with one ingot per ore. The only benefit you will gain
 <br>from using this method over a vanilla furnace is that the production is faster. This stage simply uses an energised
-<br>smelter to smelt ore into one ingot. The Energised smelter requires an energy source to power it. This is the same
-<br>for all of the machines in this process.
+<br>smelter to smelt ore into one ingot.
 </div>
 <div class="stage2-text">
 <h3>Stage 2:</h3>
-<p>Stage 2 is a little more complicated but is still very simple, This stage will give you two ingots from one ore. This
-<br>is similar to many other mods that implement ore processing. For this stage you will need the energised smelter yet 
-<br>again as well as an enrichment chamber which will turn one ore into two dust as long as the ore you are processing is
-<br>supported by the mod. All of the ores that have a dustr form from other mods should also be compatible in this stage.
+<p>Stage 2 is a little more complicated but still very simple, This stage will give you two ingots from one ore. This
+<br>is similar to many other mods that implement ore processing. For this stage you will need the energised smelter 
+<br>again as well as an enrichment chamber which will turn one ore into two dust as long as the ore you are refining
+<br>is supported by the mod. All of the ores that have a dustr form from other mods should also be compatible in this
+<br>stage.
 </div>
 <div class="stage3-text">
 <h3>Stage 3:</h3>
 <p>Stage 3 is where it really starts to implement other aspects of the mod, you will need the other two machines from
 <br>stage two as well as three new machines, the electrolytic seperator, the purification chamber and the crusher. lots
-<br>of mods have a crusher so make sure you are crafting the Mekanism one if you are using a modpack. First, you
+<br>of mods have a crusher so make sure you are crafting the Mekanism one, if you are using a modpack. First, you
 <br>need to pump water into the electrolytic seperator, this machine seperates the water into oxygen and hydrogen.
 <br>For this stage we need the oxygen. Pump the oxygen out of the seperator into the purification chamber, this will
 <br>turn the ore into 3 clumps, then the crusher will crush the three clumps into 3 dirty dust. The enrichment chamber
@@ -238,9 +363,8 @@ Mekanism Mod Tutorial
 <br>ores will not be able to be processed as the clumps and dirty dust are a mekanism specific item.
 <br>
 </div>
-<div class="stage4-text">
-<h3>Stage 4:</h3>
-<h4>Salination Tower:</h4>
+<div class="salination-tower">
+<h3>Salination Tower:</h3>
 <p>Stage 4 will require a whole new structure, you will need a salination tower to make brine. The salination
 <br>tower works on heat. You will need to build it in a hot biome such as a volcanic island or a desert biome.
 <br>The more heat you have the faster it will produce brine. To build the tower you will create a four by four
@@ -250,9 +374,11 @@ Mekanism Mod Tutorial
 <br>controller somewhere in the layer and the rest made up of thermal evaporation blocks. Input water into one
 <br>of the valves, this will use a large amount of water so make sure you have a good source. Brine will now be 
 <br>produced, export the brine through the other valve and you have completed this stage. 
-
-<h4>Ore Refinement:</h4>
-<p>You willneed some other machines to refine the ore as well as the other machines from the previous stages. You
+</div>
+</p>
+<div class="stage4-text">
+<h3>Stage 4:</h3>
+<p>You will need some other machines to refine the ore as well as the other machines from the previous stages. You
 <br>will need another two electrolytic seperators one to put the brine into and one for water. You will also need a 
 <br>chemical infuser. To start this stage, pump the chlorine made in the seperator from the brine, into one side of 
 <br>the chemical infuser and pump the hydrogen made in the other seperator from the water into the other side.
@@ -272,38 +398,173 @@ Mekanism Mod Tutorial
 <!-- Picture Box: stage 2 -->
 
 <!-- The small images -->
-<div class="row">
-  <div class="column">
-    <img src="energised-smelter.png" alt="Energised Smelter" onclick="myFunction(this);">
+<div class="row1">
+  <div class="column1">
+    <img src="energised-smelter.png" alt="Energised Smelter" onclick="myFunction1(this);">
   </div>
-  <div class="column">
-    <img src="enrichment-chamber.png" alt="Enrichment Chamber" onclick="myFunction(this);">
+  <div class="column1">
+    <img src="enrichment-chamber.png" alt="Enrichment Chamber" onclick="myFunction1(this);">
   </div>
 </div>
 <!-- The enlarged Image -->
-<div class="container">
+<div class="container1">
   <!-- Close button for enlarged image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <span onclick="this.parentElement.style.display='none'" class="closebtn1">&times;</span>
 
   <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
+  <img id="expandedImg1" style="width:100%">
 
   <!-- the image text  -->
-  <div id="imgtext"></div>
+  <div id="imgtext1"></div>
 </div>
 
 
 
+<!-- Picture Box: stage 3 -->
+
+<!-- The small images -->
+<div class="row2">
+  <div class="column2">
+    <img src="electrolytic-seperator.png" alt="Electrolytic Seperator" onclick="myFunction2(this);">
+  </div>
+  <div class="column2">
+    <img src="purification-chamber.png" alt="Purification Chamber" onclick="myFunction2(this);">
+  </div>
+   <div class="column2">
+    <img src="crusher.png" alt="Crusher" onclick="myFunction2(this);">
+  </div>
+</div>
+<!-- The enlarged Image -->
+<div class="container2">
+  <!-- Close button for enlarged image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn2">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg2" style="width:100%">
+
+  <!-- the image text  -->
+  <div id="imgtext2"></div>
+</div>
+
+
+<!-- Picture Box: Salination Tower -->
+
+<!-- The small images -->
+<div class="row3">
+  <div class="column3">
+    <img src="layer1.png" alt="First Layer" onclick="myFunction3(this);">
+  </div>
+  <div class="column3">
+    <img src="layer2.png" alt="Second Layer" onclick="myFunction3(this);">
+  </div>
+   <div class="column3">
+    <img src="layer3.png" alt="Third Layer" onclick="myFunction3(this);">
+  </div>
+  <div class="column3">
+    <img src="layer4.png" alt="Fourth Layer" onclick="myFunction3(this);">
+  </div>
+</div>
+<!-- The enlarged Image -->
+<div class="container3">
+  <!-- Close button for enlarged image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn3">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg3" style="width:100%">
+
+  <!-- the image text  -->
+  <div id="imgtext3"></div>
+</div>
+
+
+
+<!-- Picture Box: Stage 4 -->
+
+<!-- The small images -->
+<div class="row4">
+  <div class="column4">
+    <img src="chemical-infuser.png" alt="Chemical Infuser" onclick="myFunction4(this);">
+  </div>
+  <div class="column4">
+    <img src="chemical-injection.png" alt="Chemical Injection Chamber" onclick="myFunction4(this);">
+  </div>
+</div>
+<!-- The enlarged Image -->
+<div class="container4">
+  <!-- Close button for enlarged image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn4">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg4" style="width:100%">
+
+  <!-- the image text  -->
+  <div id="imgtext4"></div>
+</div>
+
+
+
+
+<div class="stage1-img">
+<img src="energised-smelter.png" alt="Coal Generator" width="300" height="150">
+</div>
 
 <script>
 
 //Stage 2 JAVASCRIPT
 
-function myFunction(imgs) {
+function myFunction1(imgs) {
   // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
+  var expandImg = document.getElementById("expandedImg1");
   // Get the image text
-  var imgText = document.getElementById("imgtext");
+  var imgText = document.getElementById("imgtext1");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+//Stage 3 JAVASCRIPT
+
+function myFunction2(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg2");
+  // Get the image text
+  var imgText = document.getElementById("imgtext2");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+//Salination Tower JAVASCRIPT
+
+function myFunction3(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg3");
+  // Get the image text
+  var imgText = document.getElementById("imgtext3");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+
+//Stage 4 JAVASCRIPT
+
+function myFunction4(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg4");
+  // Get the image text
+  var imgText = document.getElementById("imgtext4");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -312,22 +573,5 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
